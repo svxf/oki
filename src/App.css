@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+body {
+  position: relative;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+
+::-webkit-scrollbar {
+width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+background-color: #8273be;
+border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background-color: #5e578c;
+}
+
+.App {
+  position: relative;
+  background: #2e2947;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Manrope', sans-serif;
+  color: rgba(255, 255, 255, 0.92);
+}
+
