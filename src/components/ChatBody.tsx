@@ -79,10 +79,14 @@ const Chatbox = styled.div`
 const Messages = styled.div`
   display: flex;
   flex-direction: column-reverse!important;
-  padding: 16px;
+  /* padding: 16px; */
+  padding-top: 16px;
+  padding-bottom: 16px;
   width: 100%;
   height: calc(100% - 100px);
   overflow-y: auto;
+  gap: 0rem!important;
+
 
   img {
     height: 64px;
@@ -96,6 +100,8 @@ const Messages = styled.div`
     flex-direction: column;
     flex-grow: 1;
     gap: 0.5rem;
+    /* padding: 8px; */
+    
   }
 
   .info {
