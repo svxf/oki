@@ -20,7 +20,7 @@ export const Member = ({ displayName, userName, status }: MemberProps) => {
       <div>
         <div className="info">
           <h1>{displayName}</h1>
-          <span>{userName}</span>
+          <span>@{userName}</span>
         </div>
       </div>
     </Container>

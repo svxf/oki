@@ -6,9 +6,11 @@ interface MessageProps {
     userName: string;
     date: string;
     content: string;
+    anchor?: boolean;
+    code?: boolean;
 }
 
-function Message({ displayName, userName, date, content }: MessageProps) {
+function Message({ displayName, userName, date, content, anchor, code }: MessageProps) {
     return (
     <Container>
         <img src='https://avatars.githubusercontent.com/u/60079016' />
@@ -20,12 +22,21 @@ function Message({ displayName, userName, date, content }: MessageProps) {
                 <span>{date}</span>
             </div>
             <Content>
-                {content}
-                {/* <code className='inline'>https://test.com/</code>
-                <a className='anchor' href='https://google.com'>https://google.com</a>
-                hello
-                what is up
-                it is meeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */}
+                {code ? (
+                    <>
+                    <code className='inline'>{content}</code>
+                    {/* Example anchors */}
+                    {/* <code className='inline'>https://test.com/</code>
+                    <a className='anchor' href='https://google.com'>https://google.com</a>
+                    hello
+                    what is up
+                    it is meeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */}
+                    </>
+                ) : (
+                    <>
+                    {anchor ? <a href={content} className='anchor'>{content}</a> : content}
+                    </>
+                )}
             </Content>
         </div>
     </Container>
@@ -46,7 +57,6 @@ const Container = styled.div`
 
     &:hover {
         background: #27223e;
-        border-radius: 8px;
     }
 `;
 

@@ -24,14 +24,14 @@ function Members() {
         <MembersBody id="online-members">
 
           <Member
-            displayName="onolein"
-            userName="lognname!!!33odso"
+            displayName="birb"
+            userName="svxf"
             status={statusEm.ONLINE}
           />
 
           <Member
-            displayName="ir"
-            userName="online guy"
+            displayName="a rando"
+            userName="stranger"
             status={statusEm.DONOTDISTURB}
           />
 
@@ -47,13 +47,13 @@ function Members() {
         <MembersBody id="offline-members" offline>
 
           <Member
-            displayName="yeye"
-            userName="offline guy"
+            displayName="steve"
+            userName="steve"
             status={statusEm.OFFLINE}
           />
 
         </MembersBody>
-        
+
       </Contents>
     </Container>
   );

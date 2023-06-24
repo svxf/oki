@@ -20,9 +20,10 @@ function ChatBody() {
         <Messages>
         {/* displayName, userName, date, content */}
         <Message displayName='svxf' userName='svxf' date='Today at 9:31 PM' content='hello' />
-        <Message displayName='svxf' userName='svxf' date='Today at 9:31 PM' content='waf' />
-        <Message displayName='svxf' userName='svxf' date='Today at 9:31 PM' content='dwagwggggggggggg' />
-        <Message displayName='svxf' userName='svxf' date='Today at 9:31 PM' content='2' />
+        <Message displayName='a rando' userName='stranger' date='Today at 9:31 PM' content='waf' />
+        <Message displayName='svxf' userName='svxf' date='Today at 9:31 PM' content='https://youtube.com' anchor />
+        <Message displayName='steve' userName='steve' date='Today at 9:31 PM' content='2' />
+        <Message displayName='steve' userName='steve' date='Today at 9:31 PM' content='https://google.com' code />
         </Messages>
     </Container>
   )
